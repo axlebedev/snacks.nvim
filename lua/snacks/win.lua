@@ -730,6 +730,9 @@ function M:open_win()
   end
   local opts = self:win_opts()
   if position == "float" then
+    if opts.anchor ~= "NW" and opts.anchor ~= "NE" and opts.anchor ~= "SW"  and opts.anchor ~= "SE" then
+      opts.anchor = nil
+    end
     self.win = vim.api.nvim_open_win(self.buf, enter, opts)
   elseif position == "current" then
     self.win = vim.api.nvim_get_current_win()
