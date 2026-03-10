@@ -1,3 +1,7 @@
+# THIS FORK
+
+quick fix of error: "snacks/win.lua:733: Invalid value of 'anchor' key"
+
 # 🍿 `snacks.nvim`
 
 A collection of small QoL plugins for Neovim.
